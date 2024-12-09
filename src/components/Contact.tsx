@@ -7,12 +7,12 @@ export function Contact() {
     email: '',
     message: '',
   });
-  const [errors, setErrors] = React.useState({});
+  const [errors, setErrors] = React.useState<{ name?: string; email?: string; message?: string }>({});
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [submitStatus, setSubmitStatus] = React.useState('');
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: { name?: string; email?: string; message?: string } = {};
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -23,25 +23,33 @@ export function Contact() {
     return newErrors;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const newErrors = validateForm();
-    
+
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
       setSubmitStatus('sending');
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      
-      setTimeout(() => setSubmitStatus(''), 3000);
+      try {
+        // Simulate API call
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitStatus(''), 3000);
+      } catch (error) {
+        setSubmitStatus('error');
+      } finally {
+        setIsSubmitting(false);
+      }
     } else {
       setErrors(newErrors);
     }
+  };
+
+  const handleInputChange = (field: keyof typeof formData, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+    setErrors((prev) => ({ ...prev, [field]: '' }));
   };
 
   return (
@@ -58,17 +66,12 @@ export function Contact() {
                 type="text"
                 id="name"
                 value={formData.name}
-                onChange={(e) => {
-                  setFormData({ ...formData, name: e.target.value });
-                  setErrors({ ...errors, name: '' });
-                }}
+                onChange={(e) => handleInputChange('name', e.target.value)}
                 className={`mt-1 block w-full rounded-md shadow-sm ${
                   errors.name ? 'border-red-500' : 'border-gray-300'
                 } focus:border-blue-500 focus:ring-blue-500`}
               />
-              {errors.name && (
-                <p className="mt-1 text-sm text-red-500">{errors.name}</p>
-              )}
+              {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
             </div>
 
             <div>
@@ -79,17 +82,12 @@ export function Contact() {
                 type="email"
                 id="email"
                 value={formData.email}
-                onChange={(e) => {
-                  setFormData({ ...formData, email: e.target.value });
-                  setErrors({ ...errors, email: '' });
-                }}
+                onChange={(e) => handleInputChange('email', e.target.value)}
                 className={`mt-1 block w-full rounded-md shadow-sm ${
                   errors.email ? 'border-red-500' : 'border-gray-300'
                 } focus:border-blue-500 focus:ring-blue-500`}
               />
-              {errors.email && (
-                <p className="mt-1 text-sm text-red-500">{errors.email}</p>
-              )}
+              {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
             </div>
 
             <div>
@@ -100,24 +98,19 @@ export function Contact() {
                 id="message"
                 rows={4}
                 value={formData.message}
-                onChange={(e) => {
-                  setFormData({ ...formData, message: e.target.value });
-                  setErrors({ ...errors, message: '' });
-                }}
+                onChange={(e) => handleInputChange('message', e.target.value)}
                 className={`mt-1 block w-full rounded-md shadow-sm ${
                   errors.message ? 'border-red-500' : 'border-gray-300'
                 } focus:border-blue-500 focus:ring-blue-500`}
               />
-              {errors.message && (
-                <p className="mt-1 text-sm text-red-500">{errors.message}</p>
-              )}
+              {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
             </div>
 
             <button
               type="submit"
               disabled={isSubmitting}
               className={`w-full flex items-center justify-center gap-2 px-6 py-3 border border-transparent text-base font-medium rounded-md text-white ${
-                isSubmitting ? 'bg-blue-400' : 'bg-blue-600 hover:bg-blue-700'
+                isSubmitting ? 'bg-blue-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
               } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
             >
               {isSubmitting ? (
@@ -131,7 +124,10 @@ export function Contact() {
             </button>
 
             {submitStatus === 'success' && (
-              <p className="text-green-600 text-center">Message sent successfully!</p>
+              <p className="text-green-600 text-center mt-4">Message sent successfully!</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="text-red-600 text-center mt-4">Failed to send message. Try again later.</p>
             )}
           </form>
         </div>
