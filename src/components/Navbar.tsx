@@ -5,7 +5,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <nav className="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -27,7 +27,7 @@ export function Navbar() {
             <a href="https://linkedin.com" className="text-gray-600 hover:text-blue-600">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:john@example.com" className="text-gray-600 hover:text-blue-600">
+            <a href="mailto:max.jacobsson1999@hotmail.com" className="text-gray-600 hover:text-blue-600">
               <Mail className="h-5 w-5" />
             </a>
           </div>
