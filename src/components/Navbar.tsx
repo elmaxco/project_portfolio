@@ -49,8 +49,8 @@ export function Navbar() {
             <a href="#references" className="block px-3 py-2 hover:bg-gray-50">References</a>
             <a href="#contact" className="block px-3 py-2 hover:bg-gray-50">Contact</a>
           </div>
-        </div>
-      )}
+        </div>  
+      )}       
     </nav>
   );
 }

@@ -10,7 +10,7 @@ const references = [
   {
     name: 'Michael Chen',
     role: 'Lead Developer at StartupX',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200',
+    image: 'https://static.wikia.nocookie.net/lego-videogames/images/c/cd/Battle_Droid.png/revision/latest?cb=20190709194840',
     text: 'Working with Max was a pleasure. He brings both technical expertise and great communication skills to every project.',
   },
 ];
