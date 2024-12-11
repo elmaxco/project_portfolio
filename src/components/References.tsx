@@ -8,7 +8,7 @@ const references = [
     text: 'Max is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills are outstanding.',
   },
   {
-    name: 'Lego Yoda',
+    name: 'Ghost of Lego Yoda',
     role: 'Lead Developer at Lego Star Wars',
     image: 'https://steamuserimages-a.akamaihd.net/ugc/1718706881190546968/CFD3A67416CC779C8E23B9139F2E23D0398F6BB2/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
     text: 'Working with Max was a pleasure. He brings both technical expertise and great communication skills to every project.',
