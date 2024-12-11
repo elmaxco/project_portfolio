@@ -9,7 +9,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-white">Max Jacobsson</span>
+            <div className="flex items-center">
+              <a href="#home" className="text-xl font-bold text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              Max Jacobsson
+              </a>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -17,9 +21,10 @@ export function Navbar() {
             <a href="#skills" className="text-white hover:text-gray-400">Skills</a>
             <a href="#portfolio" className="text-white hover:text-gray-400">Portfolio</a>
             <a href="#references" className="text-white hover:text-gray-400">References</a>
-            <a href="#contact" className="text-white hover:text-gray-400">Contact</a>
+            <a href="#contact" className="text-white hover:text-gray-400">Contact</a>            
           </div>
 
+            
           <div className="hidden md:flex items-center space-x-4">
             <a href="https://github.com/elmaxco" className="text-gray-400 hover:text-white">
               <Github className="h-5 w-5" />
