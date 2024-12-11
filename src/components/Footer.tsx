@@ -23,10 +23,10 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com" className="text-gray-400 hover:text-white">
+              <a href="https://github.com/elmaxco" className="text-gray-400 hover:text-white">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-white">
+              <a href="https://www.linkedin.com/in/max-jacobsson-62236313b/" className="text-gray-400 hover:text-white">
                 <Linkedin className="h-6 w-6" />
               </a>
               <a href="mailto:max.jacobsson1999@hotmail.com" className="text-gray-400 hover:text-white">

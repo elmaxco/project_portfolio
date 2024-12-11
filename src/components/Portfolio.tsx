@@ -1,4 +1,4 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const projects = [
   {
@@ -7,7 +7,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&h=500',
     technologies: ['React', 'Node.js', 'MongoDB'],
     github: 'https://github.com',
-    live: 'https://example.com',
   },
   {
     title: 'Task Management App',
@@ -15,7 +14,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&h=500',
     technologies: ['Vue.js', 'Express', 'PostgreSQL'],
     github: 'https://github.com',
-    live: 'https://example.com',
   },
   {
     title: 'Weather Dashboard',
@@ -23,7 +21,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&h=500',
     technologies: ['React', 'TypeScript', 'OpenWeather API'],
     github: 'https://github.com',
-    live: 'https://example.com',
   },
 ];
 
@@ -60,13 +57,6 @@ export function Portfolio() {
                   >
                     <Github className="h-5 w-5" />
                     Code
-                  </a>
-                  <a
-                    href={project.live}
-                    className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                    Live Demo
                   </a>
                 </div>
               </div>

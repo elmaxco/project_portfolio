@@ -1,8 +1,8 @@
 const skills = [
   { category: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'] },
-  { category: 'Backend', items: ['Node.js', 'C#', 'SQL', 'MongoDB'] },
-  { category: 'DevOps', items: ['Docker', 'AWS', 'CI/CD', 'Git'] },
-  { category: 'Tools', items: ['VS Code', 'Figma', 'Postman', 'Jira'] },
+  { category: 'Backend', items: ['Node.js', 'C#', 'C++', 'Pyton'] },
+  { category: 'DevOps', items: ['Docker', 'Git'] },
+  { category: 'Tools', items: ['VS Code', 'Figma', 'Jira'] },
 ];
 
 export function Skills() {

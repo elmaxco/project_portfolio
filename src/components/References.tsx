@@ -2,15 +2,15 @@ import { Quote } from 'lucide-react';
 
 const references = [
   {
-    name: 'Sarah Johnson',
-    role: 'CTO at TechCorp',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&h=200',
+    name: 'Mario',
+    role: 'CEO at Nintendo',
+    image: 'https://image.cdn2.seaart.me/2023-07-22/47696317661253/37482c38198763e17698578f71a61a0f0f151ae5_high.webp',
     text: 'Max is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills are outstanding.',
   },
   {
-    name: 'Michael Chen',
-    role: 'Lead Developer at StartupX',
-    image: 'https://static.wikia.nocookie.net/lego-videogames/images/c/cd/Battle_Droid.png/revision/latest?cb=20190709194840',
+    name: 'Lego Yoda',
+    role: 'Lead Developer at Lego Star Wars',
+    image: 'https://steamuserimages-a.akamaihd.net/ugc/1718706881190546968/CFD3A67416CC779C8E23B9139F2E23D0398F6BB2/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
     text: 'Working with Max was a pleasure. He brings both technical expertise and great communication skills to every project.',
   },
 ];

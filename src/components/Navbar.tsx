@@ -13,11 +13,11 @@ export function Navbar() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="hover:text-blue-600">About</a>
-            <a href="#skills" className="hover:text-blue-600">Skills</a>
-            <a href="#portfolio" className="hover:text-blue-600">Portfolio</a>
-            <a href="#references" className="hover:text-blue-600">References</a>
-            <a href="#contact" className="hover:text-blue-600">Contact</a>
+            <a href="#about" className="text-white hover:text-gray-400">About</a>
+            <a href="#skills" className="text-white hover:text-gray-400">Skills</a>
+            <a href="#portfolio" className="text-white hover:text-gray-400">Portfolio</a>
+            <a href="#references" className="text-white hover:text-gray-400">References</a>
+            <a href="#contact" className="text-white hover:text-gray-400">Contact</a>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
