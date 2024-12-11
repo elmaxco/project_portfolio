@@ -13,11 +13,11 @@ export function Navbar() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className= "text-white hover:text-gray-400">About</a>
-            <a href="#skills" className="text-white hover:text-">Skills</a>
-            <a href="#portfolio" className="text-white hover:text-blue-600">Portfolio</a>
-            <a href="#references" className="text-white hover:text-blue-600">References</a>
-            <a href="#contact" className="text-white hover:text-blue-600">Contact</a>
+            <a href="#about" className="hover:text-blue-600">About</a>
+            <a href="#skills" className="hover:text-blue-600">Skills</a>
+            <a href="#portfolio" className="hover:text-blue-600">Portfolio</a>
+            <a href="#references" className="hover:text-blue-600">References</a>
+            <a href="#contact" className="hover:text-blue-600">Contact</a>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -38,8 +38,19 @@ export function Navbar() {
             </button>
           </div>
         </div>
-      </div>    
-    
+      </div>
+
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#about" className="block px-3 py-2 hover:bg-gray-50">About</a>
+            <a href="#skills" className="block px-3 py-2 hover:bg-gray-50">Skills</a>
+            <a href="#portfolio" className="block px-3 py-2 hover:bg-gray-50">Portfolio</a>
+            <a href="#references" className="block px-3 py-2 hover:bg-gray-50">References</a>
+            <a href="#contact" className="block px-3 py-2 hover:bg-gray-50">Contact</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
