@@ -2,17 +2,17 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory management.',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&h=500',
-    technologies: ['React', 'Node.js', 'MongoDB'],
+    title: 'Halo 2',
+    description: 'A first-person shooter game where players can battle in a futuristic world.',
+    image: 'https://gepig.com/game_cover_460w/246.jpg',
+    technologies: ['C++', 'Blam Engine', 'Saber3D Engine'],
     github: 'https://github.com',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management tool with real-time updates.',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&h=500',
-    technologies: ['Vue.js', 'Express', 'PostgreSQL'],
+    title: 'Lego Star Wars Game',
+    description: 'A game where players can build and battle with Lego Star Wars characters.',
+    image: 'https://store-images.s-microsoft.com/image/apps.58124.13677920620920924.f0d2262f-b971-4299-914b-194791cb9c5b.7cae180d-6e80-468c-bbd3-48c3a6fe9a7e?q=90&w=480&h=270',
+    technologies: ['C#', 'NTT', 'C++'],
     github: 'https://github.com',
   },
   {
