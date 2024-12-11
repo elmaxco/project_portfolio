@@ -21,7 +21,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&h=500',
     technologies: ['React', 'TypeScript', 'OpenWeather API'],
     github: 'https://github.com',
-  },
+  },  
 ];
 
 export function Portfolio() {
