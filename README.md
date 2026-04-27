@@ -1,40 +1,38 @@
-# Portfolio Project
+Portfolio Project
 
-Välkommen till mitt portfolio-projekt! Detta projekt är en personlig webbaserad portfölj byggd med moderna teknologier som **React**, **TypeScript** och **Vite**. Målet med detta projekt är att visa upp mina kunskaper och erfarenheter inom webbutveckling, presentera mina tidigare projekt, och tillhandahålla ett enkelt sätt för besökare att kontakta mig.
+Welcome to my portfolio project! This is a personal web-based portfolio built with modern technologies such as React, TypeScript, and Vite. The purpose of this project is to showcase my skills and experience in web development, highlight my previous work, and provide an easy way for visitors to get in touch with me.
 
-## Beskrivning
+Description
 
-Den här portföljen är skapad med ett starkt fokus på användarvänlighet och design. Applikationen är uppbyggd av modulära komponenter för att säkerställa enkel underhåll och utbyggnad i framtiden. Portföljen inkluderar följande sektioner:
+This portfolio is designed with a strong focus on usability and clean design. The application is built using modular components to ensure maintainability and scalability for future improvements.
 
-- **Om mig**: En kort introduktion om vem jag är och vad jag gör.
-- **Färdigheter**: En lista över mina tekniska färdigheter och expertområden.
-- **Projekt**: Ett galleri med projekt jag har arbetat på, inklusive länkar till kod och live-demonstrationer.
-- **Referenser**: Citat och rekommendationer från personer jag har arbetat med.
-- **Kontakt**: Ett formulär för besökare att enkelt nå ut till mig.
+The portfolio includes the following sections:
 
-Projektet är responsivt och designat för att fungera sömlöst på alla enheter, från mobiler till stora skärmar.
+About Me: A brief introduction about who I am and what I do.
+Skills: An overview of my technical skills and areas of expertise.
+Projects: A collection of projects I have worked on, including links to source code and live demos.
+Testimonials: Quotes and recommendations from people I have worked with.
+Contact: A simple form that allows visitors to easily reach out to me.
 
-## Teknologier
+The project is fully responsive and optimized to work seamlessly across all devices, from mobile phones to large desktop screens.
 
-Detta projekt är byggt med följande teknologier:
+Technologies
 
-- **React** - För att skapa det dynamiska användargränssnittet.
-- **TypeScript** - För att säkerställa en typsäker och robust kodbas.
-- **Vite** - För en snabb och effektiv utvecklingsupplevelse.
-- **Tailwind CSS** - För modern och flexibel styling.
-- **PostCSS** - För att hantera avancerad CSS.
-- **ESLint** - För att säkerställa hög kodkvalitet.
-- **Node.js & npm** - För hantering av beroenden och skript.
+This project is built using the following technologies:
 
-## Funktioner
+React – For building a dynamic and interactive user interface.
+TypeScript – To ensure a type-safe and maintainable codebase.
+Vite – For a fast and efficient development experience.
+Tailwind CSS – For modern, utility-first styling.
+PostCSS – For advanced CSS processing.
+ESLint – To maintain high code quality and consistency.
+Node.js & npm – For dependency management and scripting.
+Features
+Modern Design: Clean and visually appealing UI built with Tailwind CSS.
+Responsive Layout: Fully optimized for all screen sizes and devices.
+Contact Form: Allows visitors to easily get in touch directly through the site.
+Interactive Components: Smooth and dynamic user experience.
+SEO Optimization: Basic search engine optimization for better visibility.
+Project Structure
 
-- **Modern Design**: Ett rent och modernt gränssnitt designat med Tailwind CSS.
-- **Responsiv Design**: Optimerad för att fungera perfekt på alla enheter.
-- **Kontaktformulär**: Möjlighet för besökare att kontakta mig direkt via portföljen.
-- **Interaktivitet**: Komponenter som är dynamiska och responsiva för en smidig användarupplevelse.
-- **SEO-optimering**: Grundläggande optimering för bättre synlighet på sökmotorer.
-
-## Projektstruktur
-
-Projektets mappstruktur är organiserad för att vara modulär och lättförståelig:
-
+The project is organized with a modular and easy-to-understand folder structure, making it simple to maintain and extend.
